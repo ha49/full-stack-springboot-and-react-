@@ -1,0 +1,15 @@
+button {
+    background-color: #61dafb;
+    font-size: 20px;
+    padding: 10px 10px;
+    color: white;
+    width: 50px;
+}
+
+.result {
+   color: orange;
+    font-size: 30px;
+    padding: 10px;
+
+
+}
