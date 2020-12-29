@@ -23,6 +23,8 @@ class LoginComponent extends Component {
             username: "topuser",
             password: "123"
         }
+        this.handleUsernameChange=this.handleUsernameChange.bind(this)
+        this.handlePasswordChange=this.handlePasswordChange.bind(this)
     }
 
     render() {
@@ -42,11 +44,21 @@ class LoginComponent extends Component {
     }
 
     handleUsernameChange(event) {
-        console.log(event)
+        console.log(event.target.value)
+        this.setState({
+                username:event.target.value
+
+            }
+        )
     }
 
     handlePasswordChange(event) {
-        console.log(event)
+        console.log(event.target.value)
+        this.setState(
+            {
+                password:event.target.value
+            }
+        )
 
     }
 }
