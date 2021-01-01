@@ -1,16 +1,14 @@
 import React, {Component} from "react";
 
 class WelcomePageComponent extends Component {
-    render(){
+    render() {
 
         return <div>
 
-Welcome to the first page  </div>
+            Welcome {this.props.match.params.name} </div>
 
     }
 }
-
-
 
 
 export default WelcomePageComponent
