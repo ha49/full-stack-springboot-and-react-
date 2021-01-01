@@ -1,7 +1,10 @@
 import React, {Component} from "react";
 import LoginComponent from "./LoginComponent";
 import WelcomePageComponent from "./WelcomePageComponent";
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import ErrorComponent from "./ErrorComp";
+
+
 
 class TodoComponent extends Component {
 
@@ -10,9 +13,12 @@ class TodoComponent extends Component {
             <div className="TodoApp">
                 <Router>
                     <>
+                        <Switch>
                         <Route path="/" exact component={LoginComponent} />
                         <Route path="/login" component={LoginComponent} />
                         <Route path="/welcome" component={WelcomePageComponent} />
+                        <Route component={ErrorComponent} />
+                        </Switch>
                     </>
 
 
