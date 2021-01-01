@@ -6,8 +6,6 @@ class TodoComponent extends Component {
     render() {
         return (
             <div>
-                Hello Todo App.<br/>
-                This is todo component
                 <LoginComponent/>
             </div>
         )
