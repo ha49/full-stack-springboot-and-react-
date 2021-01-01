@@ -16,7 +16,7 @@ class TodoComponent extends Component {
                         <Switch>
                         <Route path="/" exact component={LoginComponent} />
                         <Route path="/login" component={LoginComponent} />
-                        <Route path="/welcome" component={WelcomePageComponent} />
+                        <Route path="/welcome/:name" component={WelcomePageComponent} />
                         <Route component={ErrorComponent} />
                         </Switch>
                     </>
