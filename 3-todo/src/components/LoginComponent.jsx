@@ -22,10 +22,11 @@ class LoginComponent extends Component {
             <div>
 
                 {/*<ShowInvalidCredentialsMessage hasLoginFailed={this.state.hasLoginFailed}/>*/}
-                {this.state.hasLoginFailed} && <div>Invalid username or password</div>
+
+                {this.state.hasLoginFailed && <div>Invalid username or password</div>}
 
                 {/*<ShowLoginSuccessMessage showSuccessMessage={this.state.showSuccessMessage}/>*/}
-                {this.state.showSuccessMessage} && <div>Login successful</div>
+                {this.state.showSuccessMessage  && <div>Login successful</div>}
                 Username: <input type="text"
                                  name="username"
                                  value={this.state.username}

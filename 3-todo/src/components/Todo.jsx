@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import LoginComponent from "./LoginComponent";
+import WelcomePageComponent from "./WelcomePageComponent";
 
 class TodoComponent extends Component {
 
@@ -7,6 +8,7 @@ class TodoComponent extends Component {
         return (
             <div>
                 <LoginComponent/>
+                <WelcomePageComponent/>
             </div>
         )
     }
