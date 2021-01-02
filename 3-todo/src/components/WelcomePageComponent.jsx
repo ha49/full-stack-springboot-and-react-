@@ -1,12 +1,16 @@
 import React, {Component} from "react";
+import '../App.css';
 
 class WelcomePageComponent extends Component {
     render() {
 
         return <div>
+            <h1>
+                Welcome <span className="username"> {this.props.match.params.name}</span>
 
-            Welcome {this.props.match.params.name} </div>
 
+            </h1>
+        </div>
     }
 }
 
