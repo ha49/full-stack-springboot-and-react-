@@ -6,7 +6,7 @@ class WelcomePageComponent extends Component {
 
         return <div>
             <h1>
-                Welcome <span className="username"> {this.props.match.params.name}</span>
+                Welcome <span className="temporary-style"> {this.props.match.params.name}</span>
 
 
             </h1>
